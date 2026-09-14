@@ -3,7 +3,10 @@
 
 def get_vehicle_year(data):
     # TODO: Write your logic here safely
-    pass
+    for i,k in data.items():
+       for j,l in k.items():
+            for o, p in l.items():
+                return(p)
 
 # Test Case
 vehicle = {'specs': {'model_info': {'year': 2024}}}

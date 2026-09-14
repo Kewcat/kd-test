@@ -4,7 +4,15 @@
 
 def count_categories(categories):
     # TODO: Write your logic here
-    pass
+    d={}
+    for i in categories:
+        if i not in d:
+            d[i]= 1
+        elif i in d:
+             d[i]= d[i]+1
+
+    print(d)
+    return(d)
 
 # Test Case
 data = ['Brakes', 'Engine', 'Brakes', 'Tools', 'Engine', 'Brakes']

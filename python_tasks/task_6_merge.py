@@ -4,7 +4,22 @@
 
 def update_inventory(current, updates):
     # TODO: Implement merge logic
-    pass
+    merge= {}
+    for i,k in current.items():
+        print(i,k)
+        if i not in merge:
+            merge[i]=k
+
+    for i,k in updates.items():
+        print(i,k)
+        if i not in merge:
+            merge[i]=k
+        elif i in merge:
+            merge[i]= k
+
+
+    return(merge)
+ 
 
 # Test Case
 current_inv = {'Brakes': 10, 'Oil': 5}
